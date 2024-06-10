@@ -1,0 +1,1 @@
+[{"healthy": 51, "critical": 5, "warning": 20}]

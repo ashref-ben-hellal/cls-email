@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html  lang="en"> 
+<head>
+<style>
+
+table, th, td {
+  border: 3px solid white;
+  border-collapse: collapse;
+  border-radius: 8px;
+  margin: 8px;
+}
+.color_healthy {
+background-color: #a0e09a;
+}
+.color_crtical {
+background-color:  #eb6363;
+}
+.color_warning {
+ background-color: #f3ff90;
+}
+td {
+text-align: center !important;
+padding: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+Hi All,<br>
+ We are taking over CLS monitoring from India team.<br>
+ There is no alert at the moment.<br>
+
+
+<table width="100%">
+<tr>
+	<th width="500px"> <b>Server Health Summary</b></th>
+      {% if hostvars[inventory_hostname]['compute_health']['api_response'] != {} %}
+  <td class="color_healthy">HEALTHY <br>
+    <b>{{hostvars[inventory_hostname]['compute_health']['api_response']}} </b><br>
+  </td>
+      {% endif %}
+      {% if hostvars[inventory_hostname]['compute_critical']['api_response'] != {} %}
+  <td   class="color_crtical">CRITICAL <br> 
+    <b>{{hostvars[inventory_hostname]['compute_critical']['api_response']}}</b><br>
+  </td>
+      {% endif %}
+      {% if hostvars[inventory_hostname]['compute_warning']['api_response'] != {} %}
+  <td  class="color_warning">WARNING <br>
+    <b> {{hostvars[inventory_hostname]['compute_warning']['api_response']}}</b><br>
+  </td>
+      {% endif %}
+
+</tr>
+<tr>
+
+	<th width="500px">  <b>Fabric_Interconnects </b> </th>
+    {% if hostvars[inventory_hostname]['FabricInterconnect_health']['api_response'] != {} %}
+    <td class="color_healthy">HEALTHY <br>
+    <b>{{hostvars[inventory_hostname]['FabricInterconnect_health']['api_response']}} </b><br>
+  </td>
+    {% endif %}
+    {% if hostvars[inventory_hostname]['FabricInterconnect_critical']['api_response'] != {} %}
+  <td   class="color_crtical">CRITICAL <br>
+    <b>{{hostvars[inventory_hostname]['FabricInterconnect_critical']['api_response']}}</b><br>
+  </td>
+  {% endif %}
+  {% if hostvars[inventory_hostname]['FabricInterconnec_warning']['api_response'] != {} %}
+  <td  class="color_warning">WARNING <br>
+    <b> {{hostvars[inventory_hostname]['FabricInterconnec_warning']['api_response']}}</b><br>
+  </td>
+  {% endif %} 
+</tr> 
+
+</table>
+
+
+Kind Regards. <br>
+CaaS Global Delivery Support Email: caasgds@kyndryl.com <br>
+HelpDesk: +1 833-711-2227(Toll Free US) <br>
+
+</body>
+</html>

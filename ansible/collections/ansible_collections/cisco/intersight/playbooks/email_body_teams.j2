@@ -1,0 +1,48 @@
+<html> 
+<head>
+</head>
+<body>
+Hi All,<br>
+
+<table width="100%">
+	<th> <b>Server Health Summary</b></th>
+      {% if hostvars[inventory_hostname]['compute_health']['api_response'] != {} %}
+  <td> HEALTHY <br>
+    <b>{{hostvars[inventory_hostname]['compute_health']['api_response']}} </b><br>
+  </td>
+      {% endif %}
+      {% if hostvars[inventory_hostname]['compute_critical']['api_response'] != {} %}
+      <td> CRITICAL <br> 
+    <b>{{hostvars[inventory_hostname]['compute_critical']['api_response']}}</b><br>
+  </td>
+      {% endif %}
+      {% if hostvars[inventory_hostname]['compute_warning']['api_response'] != {} %}
+  <td>WARNING <br>
+    <b> {{hostvars[inventory_hostname]['compute_warning']['api_response']}}</b><br>
+  </td>
+      {% endif %}
+<br>
+<tr>
+     <th>  <b>Fabric_Interconnects </b> </th>
+    {% if hostvars[inventory_hostname]['FabricInterconnect_health']['api_response'] != {} %}
+    <td>HEALTHY <br>
+    <b>{{hostvars[inventory_hostname]['FabricInterconnect_health']['api_response']}} </b><br>
+  </td>
+    {% endif %} 
+   {% if hostvars[inventory_hostname]['FabricInterconnect_critical']['api_response'] != {} %}
+  <td>CRITICAL <br>
+    <b>{{hostvars[inventory_hostname]['FabricInterconnect_critical']['api_response']}}</b><br>
+  </td>
+   {% endif %}
+  {% if hostvars[inventory_hostname]['FabricInterconnec_warning']['api_response'] != {} %}
+  <td>WARNING <br>
+    <b> {{hostvars[inventory_hostname]['FabricInterconnec_warning']['api_response']}}</b><br>
+  </td>
+  {% endif %}
+
+</tr>
+
+</table>
+
+</body>
+</html>

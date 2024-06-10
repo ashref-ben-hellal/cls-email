@@ -1,0 +1,1674 @@
+ansible-playbook [core 2.13.9]
+  config file = None
+  configured module search path = ['/home/hayfa/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.8/dist-packages/ansible
+  ansible collection location = /home/hayfa/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.8.10 (default, Mar 13 2023, 10:26:41) [GCC 9.4.0]
+  jinja version = 3.1.2
+  libyaml = True
+No config file found; using defaults
+host_list declined parsing /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/playbooks/inventory as it did not pass its verify_file() method
+script declined parsing /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/playbooks/inventory as it did not pass its verify_file() method
+auto declined parsing /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/playbooks/inventory as it did not pass its verify_file() method
+Parsed /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/playbooks/inventory inventory source with ini plugin
+Skipping callback 'default', as we already have a stdout callback.
+Skipping callback 'minimal', as we already have a stdout callback.
+Skipping callback 'oneline', as we already have a stdout callback.
+
+PLAYBOOK: get_alarm_server.yml *************************************************
+1 plays in get_alarm_server.yml
+
+PLAY [Intersight_Servers] ******************************************************
+META: ran handlers
+
+TASK [Claim device] ************************************************************
+task path: /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/playbooks/get_alarm_server.yml:15
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.8931208-19759-54907846811969 `" && echo ansible-tmp-1682590333.8931208-19759-54907846811969="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.8931208-19759-54907846811969 `" ) && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9173-19760-181777777883621 `" && echo ansible-tmp-1682590333.9173-19760-181777777883621="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9173-19760-181777777883621 `" ) && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9416552-19762-277532804224155 `" && echo ansible-tmp-1682590333.9416552-19762-277532804224155="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9416552-19762-277532804224155 `" ) && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9616776-19775-13799741528721 `" && echo ansible-tmp-1682590333.9616776-19775-13799741528721="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9616776-19775-13799741528721 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9627402-19768-125939939255109 `" && echo ansible-tmp-1682590333.9627402-19768-125939939255109="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9627402-19768-125939939255109 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmp8ywvxnd5 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.8931208-19759-54907846811969/AnsiballZ_intersight_rest_api.py
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpl9bj6ige TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9416552-19762-277532804224155/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.8931208-19759-54907846811969/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.8931208-19759-54907846811969/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmphys7kpcp TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9173-19760-181777777883621/AnsiballZ_intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpsb_am99p TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9616776-19775-13799741528721/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9416552-19762-277532804224155/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9416552-19762-277532804224155/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9616776-19775-13799741528721/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9616776-19775-13799741528721/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9173-19760-181777777883621/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9173-19760-181777777883621/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpg7_zrvsp TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9627402-19768-125939939255109/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9627402-19768-125939939255109/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9627402-19768-125939939255109/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9616776-19775-13799741528721/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9416552-19762-277532804224155/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.8931208-19759-54907846811969/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9627402-19768-125939939255109/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9173-19760-181777777883621/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.8931208-19759-54907846811969/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9416552-19762-277532804224155/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-40-7 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "HDLFPEBau2GHwQTvaDdDedjiTDZlzi8y1ghJPvzZ1Upzx_0F5k408A=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9616776-19775-13799741528721/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9173-19760-181777777883621/ > /dev/null 2>&1 && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+ok: [S3260- -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Ri0lwurtpun3W7oxKuRiJEJ32GEaHzwQrgndfMdTTPMMSfrPTt4SOA=="
+}
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1698506-19878-103072644327325 `" && echo ansible-tmp-1682590335.1698506-19878-103072644327325="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1698506-19878-103072644327325 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590333.9627402-19768-125939939255109/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-40-4 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Cje8sdtkuc82PTRr9MFohvZBBUFPlP9M72R91cV0Kpp_oAU_JjuTkg=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1911833-19882-172557882657027 `" && echo ansible-tmp-1682590335.1911833-19882-172557882657027="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1911833-19882-172557882657027 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpo85js17o TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1698506-19878-103072644327325/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1698506-19878-103072644327325/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1698506-19878-103072644327325/AnsiballZ_intersight_rest_api.py && sleep 0'
+ok: [UCSPE-10-10-20-40-9 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "7-8qMaXbSsS0_CHPhFiyA5C30Qq2HhdIZqe2VR4U6aZ3kJ4z6ggpKQ=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1698506-19878-103072644327325/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2027965-19901-135667699291457 `" && echo ansible-tmp-1682590335.2027965-19901-135667699291457="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2027965-19901-135667699291457 `" ) && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+ok: [UCSPE-10-10-20-40-10 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Smv-elRN7EZIYetLWeJtKiMAmNJhcoMKsW-Mcn8mJbl3_UAlcwZAqA=="
+}
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpjohurwct TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1911833-19882-172557882657027/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1911833-19882-172557882657027/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1911833-19882-172557882657027/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2152205-19915-2502665160730 `" && echo ansible-tmp-1682590335.2152205-19915-2502665160730="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2152205-19915-2502665160730 `" ) && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1911833-19882-172557882657027/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmplr12b59t TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2027965-19901-135667699291457/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2027965-19901-135667699291457/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2027965-19901-135667699291457/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2329006-19933-247472707148648 `" && echo ansible-tmp-1682590335.2329006-19933-247472707148648="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2329006-19933-247472707148648 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpe4q2t2km TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2152205-19915-2502665160730/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2152205-19915-2502665160730/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2152205-19915-2502665160730/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2152205-19915-2502665160730/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpjin7u108 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2329006-19933-247472707148648/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2329006-19933-247472707148648/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2329006-19933-247472707148648/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2027965-19901-135667699291457/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2329006-19933-247472707148648/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1911833-19882-172557882657027/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2152205-19915-2502665160730/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-40-5 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "JP53RcxRmGzUwcROOwHopxHI8Zes7i_Pod6MMW4eZW_qvDpfh3Guog=="
+}
+ok: [UCSPE-10-10-20-40-1 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "uZg6D7K9fm6cWZYM1ukvTRzNq7rct373wCHJHJbsPzi8sK_wMTsJUQ=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.0969198-20013-167177470413915 `" && echo ansible-tmp-1682590336.0969198-20013-167177470413915="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.0969198-20013-167177470413915 `" ) && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.1081827-20014-88272266191225 `" && echo ansible-tmp-1682590336.1081827-20014-88272266191225="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.1081827-20014-88272266191225 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmp6mtnrod7 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.0969198-20013-167177470413915/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.0969198-20013-167177470413915/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.0969198-20013-167177470413915/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.0969198-20013-167177470413915/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmphpq036fe TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.1081827-20014-88272266191225/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.1081827-20014-88272266191225/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.1081827-20014-88272266191225/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.1081827-20014-88272266191225/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.1698506-19878-103072644327325/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2027965-19901-135667699291457/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-40-2 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Nha1YEDeODl6xApRKB72yqPxsWAUJMLg6tJPUJUyNBoJBrXFYcWr6Q=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590335.2329006-19933-247472707148648/ > /dev/null 2>&1 && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+ok: [UCSPE-10-10-20-40-8 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "S1H48yMpV28Ccv32jSJFyR9nfPQKVJEU29kzcVzEsIRLUrL049Eiyg=="
+}
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2526035-20063-195472533412310 `" && echo ansible-tmp-1682590336.2526035-20063-195472533412310="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2526035-20063-195472533412310 `" ) && sleep 0'
+ok: [UCSPE-10-10-20-40-6 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "nuUY28SuNQHKoXOtCrtWAlPhugw4pjiLlwvmXeQbbuG8_p3tc16LqA=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2826426-20075-10185642611291 `" && echo ansible-tmp-1682590336.2826426-20075-10185642611291="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2826426-20075-10185642611291 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2852783-20078-228062262946284 `" && echo ansible-tmp-1682590336.2852783-20078-228062262946284="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2852783-20078-228062262946284 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpj48go_e6 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2526035-20063-195472533412310/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2526035-20063-195472533412310/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2526035-20063-195472533412310/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpugwrqp9l TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2826426-20075-10185642611291/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2826426-20075-10185642611291/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2826426-20075-10185642611291/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2526035-20063-195472533412310/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpmx11phf_ TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2852783-20078-228062262946284/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2852783-20078-228062262946284/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2852783-20078-228062262946284/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2826426-20075-10185642611291/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2852783-20078-228062262946284/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.0969198-20013-167177470413915/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-40-3 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "h-P2vJWI0aiC7zuoUpLzMFEmSEDAdV_bp0kTuMCt2uVQx_7m1Y6fIQ=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.7971172-20142-196417007849819 `" && echo ansible-tmp-1682590336.7971172-20142-196417007849819="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.7971172-20142-196417007849819 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpe4v8ef2c TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.7971172-20142-196417007849819/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.7971172-20142-196417007849819/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.7971172-20142-196417007849819/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.7971172-20142-196417007849819/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.1081827-20014-88272266191225/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "RZn5r_JYNNq_Tc1bFRkil6RQLbU5_ya5tSshorO8qdSCbV-Qv34SBw=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.8831966-20168-25995086244740 `" && echo ansible-tmp-1682590336.8831966-20168-25995086244740="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.8831966-20168-25995086244740 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpuz72z70b TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.8831966-20168-25995086244740/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.8831966-20168-25995086244740/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.8831966-20168-25995086244740/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.8831966-20168-25995086244740/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2826426-20075-10185642611291/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2852783-20078-228062262946284/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-6-8 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "L9qFW7km_MDtCVmr29GvtvHV4Br7uQQRzM_yRo7ksg6YFkFxojzUJg=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+ok: [UCSPE-10-10-20-50-6-3 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "_MmJkKv4j7H6DNHatjxO94z6PwpK67Y9V0_ikcHzfr9LJo6g5lCLZw=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0843258-20200-51910478754009 `" && echo ansible-tmp-1682590337.0843258-20200-51910478754009="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0843258-20200-51910478754009 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0881927-20204-6459529889811 `" && echo ansible-tmp-1682590337.0881927-20204-6459529889811="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0881927-20204-6459529889811 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpc004lf6b TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0843258-20200-51910478754009/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0843258-20200-51910478754009/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0843258-20200-51910478754009/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0843258-20200-51910478754009/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpag3zce64 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0881927-20204-6459529889811/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0881927-20204-6459529889811/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0881927-20204-6459529889811/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0881927-20204-6459529889811/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.2526035-20063-195472533412310/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-6-1 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "TzU2S9xRcV1ERTDG5IdXAgAJ6hHCnlVlTZ4_Uxo2O4dEluD2OuRS8g=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.2965958-20249-85205178043675 `" && echo ansible-tmp-1682590337.2965958-20249-85205178043675="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.2965958-20249-85205178043675 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpxtoacyfq TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.2965958-20249-85205178043675/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.2965958-20249-85205178043675/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.2965958-20249-85205178043675/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.2965958-20249-85205178043675/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.7971172-20142-196417007849819/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-1 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "r1mATbGzNV0cmeM0IHtRNiwRDFUCUuaGpXogeA9KTO1qyyxdW-oi2g=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.495681-20277-134857763611757 `" && echo ansible-tmp-1682590337.495681-20277-134857763611757="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.495681-20277-134857763611757 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpu545oa1v TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.495681-20277-134857763611757/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.495681-20277-134857763611757/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.495681-20277-134857763611757/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.495681-20277-134857763611757/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590336.8831966-20168-25995086244740/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-3-7 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Mv7qr_OanEQX4OwT0oRkzXwUN5_nE0tz56k5R2oNGa5r2G84U-ehcg=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.6209614-20303-103063004884596 `" && echo ansible-tmp-1682590337.6209614-20303-103063004884596="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.6209614-20303-103063004884596 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpu22u_bae TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.6209614-20303-103063004884596/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.6209614-20303-103063004884596/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.6209614-20303-103063004884596/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.6209614-20303-103063004884596/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0843258-20200-51910478754009/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-6-4 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "MPlpvks87G6Ri-8t7GIQVzoiTT_DsnCII3gY94Yh4U71ZJDEM7Ii5w=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.0881927-20204-6459529889811/ > /dev/null 2>&1 && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8599825-20331-185337459797519 `" && echo ansible-tmp-1682590337.8599825-20331-185337459797519="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8599825-20331-185337459797519 `" ) && sleep 0'
+ok: [UCSPE-10-10-20-50-5-4 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "78Q5b5HGaC8KNrZSAbqLFWi9ersDaLxV4VI_8w9EnRA_XwXVIqFA2Q=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8858552-20346-160815237440833 `" && echo ansible-tmp-1682590337.8858552-20346-160815237440833="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8858552-20346-160815237440833 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpvi47zp7h TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8599825-20331-185337459797519/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8599825-20331-185337459797519/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8599825-20331-185337459797519/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8599825-20331-185337459797519/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpax15d1ew TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8858552-20346-160815237440833/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8858552-20346-160815237440833/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8858552-20346-160815237440833/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8858552-20346-160815237440833/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.2965958-20249-85205178043675/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-5 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "SsBlKQbQcjl4Ka9s1CU75x-E4NCeJmlHFAr5gePvT0o65AD0fcMang=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.0007858-20383-92656444811881 `" && echo ansible-tmp-1682590338.0007858-20383-92656444811881="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.0007858-20383-92656444811881 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpf4gd4kje TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.0007858-20383-92656444811881/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.0007858-20383-92656444811881/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.0007858-20383-92656444811881/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.0007858-20383-92656444811881/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.495681-20277-134857763611757/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-3 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "XoeDcS6_om9Ciz9hTQiJ4MdGclZxd1vBF0NAZ60yuR84sCGpW73cJA=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.22229-20412-4507721003874 `" && echo ansible-tmp-1682590338.22229-20412-4507721003874="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.22229-20412-4507721003874 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpy84bmkm5 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.22229-20412-4507721003874/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.22229-20412-4507721003874/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.22229-20412-4507721003874/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.22229-20412-4507721003874/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.6209614-20303-103063004884596/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8599825-20331-185337459797519/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-8 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "YbJk_Jwxv27qpyzxxfgGPWEr8qaw-jWHX4_NdK4z8j8Jk_6DHk7fFA=="
+}
+ok: [UCSPE-10-10-20-50-5-3 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Ifpinz39GaGNy-axg2zucdoCqYBdsHeGEwnkIaCEa3FRUiKpC5N1pg=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590337.8858552-20346-160815237440833/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5244687-20444-59895825936206 `" && echo ansible-tmp-1682590338.5244687-20444-59895825936206="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5244687-20444-59895825936206 `" ) && sleep 0'
+ok: [UCSPE-10-10-20-50-5-5 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "8eJXBjZ9_HWEjQwxQIhTIP_QWtCyP4a69M7xf8X3f8ErgIWBCgwZvw=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.549834-20446-225105018365398 `" && echo ansible-tmp-1682590338.549834-20446-225105018365398="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.549834-20446-225105018365398 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5544713-20458-231204302840389 `" && echo ansible-tmp-1682590338.5544713-20458-231204302840389="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5544713-20458-231204302840389 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmp762f007m TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5244687-20444-59895825936206/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5244687-20444-59895825936206/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5244687-20444-59895825936206/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpy7vuq1i0 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.549834-20446-225105018365398/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.549834-20446-225105018365398/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.549834-20446-225105018365398/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpg5ufl2uo TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5544713-20458-231204302840389/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5544713-20458-231204302840389/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5544713-20458-231204302840389/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5244687-20444-59895825936206/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.549834-20446-225105018365398/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5544713-20458-231204302840389/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.0007858-20383-92656444811881/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-6-6 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "2T8OsU1Eb_3P4-uqAS2abPbn1uSrZdsKQ5Qge7A_qEO6shLSZ4rVWw=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.7378855-20519-73583723315384 `" && echo ansible-tmp-1682590338.7378855-20519-73583723315384="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.7378855-20519-73583723315384 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpjs_a590j TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.7378855-20519-73583723315384/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.7378855-20519-73583723315384/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.7378855-20519-73583723315384/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.7378855-20519-73583723315384/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.22229-20412-4507721003874/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-7 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "rHHmzpdmY8-Eu6XGtbpa-851t-TaCaIXbFjaFQOXWEA43m6yhSVPBQ=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.0182724-20547-36124545056396 `" && echo ansible-tmp-1682590339.0182724-20547-36124545056396="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.0182724-20547-36124545056396 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmp61xdvju5 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.0182724-20547-36124545056396/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.0182724-20547-36124545056396/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.0182724-20547-36124545056396/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.0182724-20547-36124545056396/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.549834-20446-225105018365398/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-6-7 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "fUndIyCD4eZ-nf0Srzsqzo587cOB_JchbojO89DuE2DtOPT7g9rmYw=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.2368305-20574-72266297441879 `" && echo ansible-tmp-1682590339.2368305-20574-72266297441879="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.2368305-20574-72266297441879 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmp627po6nh TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.2368305-20574-72266297441879/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.2368305-20574-72266297441879/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.2368305-20574-72266297441879/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.2368305-20574-72266297441879/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5244687-20444-59895825936206/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-5-1 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "maiSvQCYf6Cdl_Rw0JLTl3hpde-8PaxidQzAxLgcG9fYSvLn7A9MQA=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.3641708-20600-278085000056330 `" && echo ansible-tmp-1682590339.3641708-20600-278085000056330="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.3641708-20600-278085000056330 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpmjv2x3es TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.3641708-20600-278085000056330/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.3641708-20600-278085000056330/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.3641708-20600-278085000056330/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.3641708-20600-278085000056330/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.7378855-20519-73583723315384/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-3-5 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Cwa7VfZf0adEHuC3I7XHf2A4tzv4b1fAwX_InnNmjg7l1d0JepvpfQ=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590338.5544713-20458-231204302840389/ > /dev/null 2>&1 && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+ok: [UCSPE-10-10-20-50-5-2 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "xVQVDW-7DmyXAPSadXATtiedFTzwr1w7SziBBkEe6E8inHObdqIx7g=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5848525-20628-198106771398218 `" && echo ansible-tmp-1682590339.5848525-20628-198106771398218="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5848525-20628-198106771398218 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5912898-20636-267853123888659 `" && echo ansible-tmp-1682590339.5912898-20636-267853123888659="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5912898-20636-267853123888659 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpcombp9hp TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5848525-20628-198106771398218/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5848525-20628-198106771398218/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5848525-20628-198106771398218/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmp8nch721y TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5912898-20636-267853123888659/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5912898-20636-267853123888659/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5912898-20636-267853123888659/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5848525-20628-198106771398218/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.0182724-20547-36124545056396/ > /dev/null 2>&1 && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5912898-20636-267853123888659/AnsiballZ_intersight_rest_api.py && sleep 0'
+ok: [UCSPE-10-10-20-50-6-5 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "35-9TKwE2m0PDS64pu9MS2lvRwZZRrQW51LwHsirX8rS3PJpnKx73w=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.7525094-20680-84390097692209 `" && echo ansible-tmp-1682590339.7525094-20680-84390097692209="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.7525094-20680-84390097692209 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpmybhond7 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.7525094-20680-84390097692209/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.7525094-20680-84390097692209/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.7525094-20680-84390097692209/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.7525094-20680-84390097692209/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.2368305-20574-72266297441879/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-5-7 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "Wei2SV31RZvjOOlpCPk4cO5Jni62ZJdifm5Sr-zAF8ClZfFT8_8jFQ=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.985896-20709-60484214374904 `" && echo ansible-tmp-1682590339.985896-20709-60484214374904="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.985896-20709-60484214374904 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmp17knav7i TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.985896-20709-60484214374904/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.985896-20709-60484214374904/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.985896-20709-60484214374904/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.985896-20709-60484214374904/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.3641708-20600-278085000056330/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-6 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "fuxLf8ptJYF1xgc-OT452nTQibSCKbfODxvyOt0kbA4GGVsX_wQUnw=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.0913393-20735-153202200878558 `" && echo ansible-tmp-1682590340.0913393-20735-153202200878558="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.0913393-20735-153202200878558 `" ) && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpcu7185oc TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.0913393-20735-153202200878558/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.0913393-20735-153202200878558/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.0913393-20735-153202200878558/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.0913393-20735-153202200878558/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5848525-20628-198106771398218/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-5-6 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "9pfJQ4_PVvLmy7Zo1_rZahxL8M89q0Hnj6QSybDDsLBvVCePsGvlNA=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.5912898-20636-267853123888659/ > /dev/null 2>&1 && sleep 0'
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.2665017-20763-235580834076016 `" && echo ansible-tmp-1682590340.2665017-20763-235580834076016="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.2665017-20763-235580834076016 `" ) && sleep 0'
+ok: [UCSPE-10-10-20-50-3-3 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "3RqvbJwf_RyT9U2nqYBaKZ8NBNX-9NX4HgwBrbGfLOtqPI_aK0ScXw=="
+}
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: hayfa
+<localhost> EXEC /bin/sh -c 'echo ~hayfa && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpweyemolb TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.2665017-20763-235580834076016/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/hayfa/.ansible/tmp `"&& mkdir "` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.302198-20774-21984166510763 `" && echo ansible-tmp-1682590340.302198-20774-21984166510763="` echo /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.302198-20774-21984166510763 `" ) && sleep 0'
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.2665017-20763-235580834076016/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.2665017-20763-235580834076016/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.2665017-20763-235580834076016/AnsiballZ_intersight_rest_api.py && sleep 0'
+Using module file /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/plugins/modules/intersight_rest_api.py
+<localhost> PUT /home/hayfa/.ansible/tmp/ansible-local-19754axtjtuc4/tmpmglfngg8 TO /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.302198-20774-21984166510763/AnsiballZ_intersight_rest_api.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.302198-20774-21984166510763/ /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.302198-20774-21984166510763/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.302198-20774-21984166510763/AnsiballZ_intersight_rest_api.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.7525094-20680-84390097692209/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-2 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "CfOWtiMj2WvWfu8jDO5OQ5oBQcJGO8nV0lH04cc5XIRjDQAPaIE1jA=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590339.985896-20709-60484214374904/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-4-4 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "chv6nj5ivXsc-RP5ceET-EPOqOEMD3mbvzHLYEYKtUYgzn0VtPu3Tw=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.0913393-20735-153202200878558/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-5-8 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "CAVyJg6HwOhlV4lvuDAlHBcsAFeUbaErhnjMFU5MiSunRMDonsiegg=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.2665017-20763-235580834076016/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-3-1 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "kvMuKHYQwl1IyNglmqiG0x9Cbqujm6gEoPO62vmhhbKIvtRlUb5LyQ=="
+}
+<localhost> EXEC /bin/sh -c 'rm -f -r /home/hayfa/.ansible/tmp/ansible-tmp-1682590340.302198-20774-21984166510763/ > /dev/null 2>&1 && sleep 0'
+ok: [UCSPE-10-10-20-50-6-2 -> localhost] => {
+    "api_response": {},
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_body": {},
+            "api_key_id": "641444667564612d333f5198/641444677564612d333f519d/643f9b7675646131011b866a",
+            "api_private_key": "/home/hayfa/Downloads/SecretKey.txt",
+            "api_uri": "https://intersight.com/api/v1",
+            "list_body": [],
+            "query_params": {
+                "$count": true,
+                "$filter": "Severity eq 'Critical'"
+            },
+            "resource_path": "/cond/Alarms",
+            "return_list": false,
+            "state": "present",
+            "update_method": "patch",
+            "use_proxy": true,
+            "validate_certs": true
+        }
+    },
+    "trace_id": "zw19zxxg35SzzC4_GAdnpQcTyTEGMjJHZGmc1rSGj6Y0ZzSGkNsYAQ=="
+}
+
+TASK [test] ********************************************************************
+task path: /home/hayfa/.ansible/collections/ansible_collections/cisco/intersight/playbooks/get_alarm_server.yml:25
+ok: [S3260-] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Ri0lwurtpun3W7oxKuRiJEJ32GEaHzwQrgndfMdTTPMMSfrPTt4SOA=="
+    }
+}
+ok: [UCSPE-10-10-20-40-9] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "7-8qMaXbSsS0_CHPhFiyA5C30Qq2HhdIZqe2VR4U6aZ3kJ4z6ggpKQ=="
+    }
+}
+ok: [UCSPE-10-10-20-40-7] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "HDLFPEBau2GHwQTvaDdDedjiTDZlzi8y1ghJPvzZ1Upzx_0F5k408A=="
+    }
+}
+ok: [UCSPE-10-10-20-40-10] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Smv-elRN7EZIYetLWeJtKiMAmNJhcoMKsW-Mcn8mJbl3_UAlcwZAqA=="
+    }
+}
+ok: [UCSPE-10-10-20-40-4] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Cje8sdtkuc82PTRr9MFohvZBBUFPlP9M72R91cV0Kpp_oAU_JjuTkg=="
+    }
+}
+ok: [UCSPE-10-10-20-40-2] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Nha1YEDeODl6xApRKB72yqPxsWAUJMLg6tJPUJUyNBoJBrXFYcWr6Q=="
+    }
+}
+ok: [UCSPE-10-10-20-40-5] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "JP53RcxRmGzUwcROOwHopxHI8Zes7i_Pod6MMW4eZW_qvDpfh3Guog=="
+    }
+}
+ok: [UCSPE-10-10-20-40-6] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "nuUY28SuNQHKoXOtCrtWAlPhugw4pjiLlwvmXeQbbuG8_p3tc16LqA=="
+    }
+}
+ok: [UCSPE-10-10-20-40-1] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "uZg6D7K9fm6cWZYM1ukvTRzNq7rct373wCHJHJbsPzi8sK_wMTsJUQ=="
+    }
+}
+ok: [UCSPE-10-10-20-40-8] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "S1H48yMpV28Ccv32jSJFyR9nfPQKVJEU29kzcVzEsIRLUrL049Eiyg=="
+    }
+}
+ok: [UCSPE-10-10-20-40-3] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "h-P2vJWI0aiC7zuoUpLzMFEmSEDAdV_bp0kTuMCt2uVQx_7m1Y6fIQ=="
+    }
+}
+ok: [UCSPE-10-10-20-50] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "RZn5r_JYNNq_Tc1bFRkil6RQLbU5_ya5tSshorO8qdSCbV-Qv34SBw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-1] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "TzU2S9xRcV1ERTDG5IdXAgAJ6hHCnlVlTZ4_Uxo2O4dEluD2OuRS8g=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-8] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "L9qFW7km_MDtCVmr29GvtvHV4Br7uQQRzM_yRo7ksg6YFkFxojzUJg=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-3] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "_MmJkKv4j7H6DNHatjxO94z6PwpK67Y9V0_ikcHzfr9LJo6g5lCLZw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-1] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "r1mATbGzNV0cmeM0IHtRNiwRDFUCUuaGpXogeA9KTO1qyyxdW-oi2g=="
+    }
+}
+ok: [UCSPE-10-10-20-50-3-7] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Mv7qr_OanEQX4OwT0oRkzXwUN5_nE0tz56k5R2oNGa5r2G84U-ehcg=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-4] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "MPlpvks87G6Ri-8t7GIQVzoiTT_DsnCII3gY94Yh4U71ZJDEM7Ii5w=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-4] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "78Q5b5HGaC8KNrZSAbqLFWi9ersDaLxV4VI_8w9EnRA_XwXVIqFA2Q=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-5] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "SsBlKQbQcjl4Ka9s1CU75x-E4NCeJmlHFAr5gePvT0o65AD0fcMang=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-3] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "XoeDcS6_om9Ciz9hTQiJ4MdGclZxd1vBF0NAZ60yuR84sCGpW73cJA=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-3] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Ifpinz39GaGNy-axg2zucdoCqYBdsHeGEwnkIaCEa3FRUiKpC5N1pg=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-8] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "YbJk_Jwxv27qpyzxxfgGPWEr8qaw-jWHX4_NdK4z8j8Jk_6DHk7fFA=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-5] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "8eJXBjZ9_HWEjQwxQIhTIP_QWtCyP4a69M7xf8X3f8ErgIWBCgwZvw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-6] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "2T8OsU1Eb_3P4-uqAS2abPbn1uSrZdsKQ5Qge7A_qEO6shLSZ4rVWw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-7] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "rHHmzpdmY8-Eu6XGtbpa-851t-TaCaIXbFjaFQOXWEA43m6yhSVPBQ=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-1] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "maiSvQCYf6Cdl_Rw0JLTl3hpde-8PaxidQzAxLgcG9fYSvLn7A9MQA=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-7] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "fUndIyCD4eZ-nf0Srzsqzo587cOB_JchbojO89DuE2DtOPT7g9rmYw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-2] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "xVQVDW-7DmyXAPSadXATtiedFTzwr1w7SziBBkEe6E8inHObdqIx7g=="
+    }
+}
+ok: [UCSPE-10-10-20-50-3-5] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Cwa7VfZf0adEHuC3I7XHf2A4tzv4b1fAwX_InnNmjg7l1d0JepvpfQ=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-5] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "35-9TKwE2m0PDS64pu9MS2lvRwZZRrQW51LwHsirX8rS3PJpnKx73w=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-7] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "Wei2SV31RZvjOOlpCPk4cO5Jni62ZJdifm5Sr-zAF8ClZfFT8_8jFQ=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-6] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "fuxLf8ptJYF1xgc-OT452nTQibSCKbfODxvyOt0kbA4GGVsX_wQUnw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-6] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "9pfJQ4_PVvLmy7Zo1_rZahxL8M89q0Hnj6QSybDDsLBvVCePsGvlNA=="
+    }
+}
+ok: [UCSPE-10-10-20-50-3-3] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "3RqvbJwf_RyT9U2nqYBaKZ8NBNX-9NX4HgwBrbGfLOtqPI_aK0ScXw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-2] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "CfOWtiMj2WvWfu8jDO5OQ5oBQcJGO8nV0lH04cc5XIRjDQAPaIE1jA=="
+    }
+}
+ok: [UCSPE-10-10-20-50-4-4] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "chv6nj5ivXsc-RP5ceET-EPOqOEMD3mbvzHLYEYKtUYgzn0VtPu3Tw=="
+    }
+}
+ok: [UCSPE-10-10-20-50-5-8] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "CAVyJg6HwOhlV4lvuDAlHBcsAFeUbaErhnjMFU5MiSunRMDonsiegg=="
+    }
+}
+ok: [UCSPE-10-10-20-50-3-1] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "kvMuKHYQwl1IyNglmqiG0x9Cbqujm6gEoPO62vmhhbKIvtRlUb5LyQ=="
+    }
+}
+ok: [UCSPE-10-10-20-50-6-2] => {
+    "msg": {
+        "api_response": {},
+        "changed": false,
+        "failed": false,
+        "trace_id": "zw19zxxg35SzzC4_GAdnpQcTyTEGMjJHZGmc1rSGj6Y0ZzSGkNsYAQ=="
+    }
+}
+META: ran handlers
+META: ran handlers
+
+PLAY RECAP *********************************************************************
+S3260-                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-10       : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-2        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-3        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-4        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-5        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-6        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-7        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-8        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-40-9        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-3-1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-3-3      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-3-5      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-3-7      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-2      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-3      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-4      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-5      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-6      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-7      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-4-8      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-2      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-3      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-4      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-5      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-6      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-7      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-5-8      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-2      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-3      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-4      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-5      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-6      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-7      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+UCSPE-10-10-20-50-6-8      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
