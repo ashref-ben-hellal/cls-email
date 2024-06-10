@@ -1,1 +1,0 @@
-{"changed": false, "api_response": 51, "trace_id": "", "ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3"}, "failed": false}
