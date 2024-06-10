@@ -1,0 +1,28 @@
+#
+- hosts: "{{ group | default('Intersight_Servers') }}"
+  connection: local
+  gather_facts: false
+  run_once: yes
+  vars:
+    # Create an anchor for api_info that can be used throughout the file
+    api_info: &api_info
+      api_private_key: "{{ api_private_key }}"
+      api_key_id: "{{ api_key_id }}"
+      api_uri: "{{ api_uri | default(omit) }}"
+      validate_certs: "{{ validate_certs | default(omit) }}"
+      state: "{{ state | default(omit) }}"
+  tasks:
+    # Claim device
+    - name: Claim device
+      cisco.intersight.intersight_rest_api:
+        <<: *api_info
+        resource_path: /cond/Alarms
+        query_params:
+          $filter: "Severity eq 'Critical'"
+          $count: true
+      register: os_re
+      delegate_to: localhost
+      #run_once: true
+    - name: test
+      debug: 
+        msg: "{{ lookup('pipe','date +%d-%b-%Y_%H:%M:%Z') }}"

@@ -1,0 +1,16 @@
+---
+- hosts: "{{group | default('Intersight_Servers')}}"
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Include task get physical alerts
+      include_tasks: 
+        file: get_physical_summer.yml
+    - name: get 
+      debug: 
+        msg= {{hostvars[localhost]['compute_health']['api_response']}}
+    # - name: use template
+        #template:
+           #src: email_body.j2
+           # dest: ./logs/email.txt
+

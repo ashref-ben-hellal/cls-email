@@ -1,0 +1,123 @@
+
+#- hosts: "{{ group | default('Intersight_Servers') }}"
+- hosts: 127.0.0.1
+  connection: local
+  gather_facts: false
+  run_once: yes
+  vars:
+    # Create an anchor for api_info that can be used throughout the file
+    api_info: &api_info
+      api_private_key: "{{ api_private_key }}"
+      api_key_id: "{{ api_key_id }}"
+      api_uri: "{{ api_uri | default(omit) }}"
+      validate_certs: "{{ validate_certs | default(omit) }}"
+      state: "{{ state | default(omit) }}"
+  vars_files:
+    - email_smtp.yml
+  tasks:
+    # GET dashboard alarm for servers 
+    - name: Healthy Alerts
+      cisco.intersight.intersight_rest_api:
+        <<: *api_info
+        resource_path: /compute/PhysicalSummaries
+        query_params:
+          $filter: "((AlarmSummary.Critical eq 0) and (AlarmSummary.Warning eq 0))"
+          $count: true
+      register: compute_health
+      # run_once: true
+    - name: Critical Alerts
+      cisco.intersight.intersight_rest_api:
+        <<: *api_info
+        resource_path: /compute/PhysicalSummaries
+        query_params:
+          $filter: "(AlarmSummary.Critical gt 0)"
+          $count: true
+      register: compute_critical
+      #delegate_to: localhost
+      #run_once: true
+    - name: Warning Alerts
+      cisco.intersight.intersight_rest_api:
+        <<: *api_info
+        resource_path: /compute/PhysicalSummaries
+        query_params:
+          $filter: "((AlarmSummary.Critical eq 0) and (AlarmSummary.Warning gt 0))"
+          $count: true
+      register: compute_warning
+      #delegate_to: localhost
+      #run_once: true
+    - name: Create file with api response
+      copy: 
+        content:  "{{ [{ 'healthy': compute_health.api_response,
+                         'critical': compute_critical.api_response,
+                         'warning': compute_warning.api_response}] }}"
+
+        dest: ./logs/achrefhaifa.txt
+        #- name: Get value for test
+        #debug:
+        # var=hostvars[inventory_hostname]['compute_health']['api_response']    
+    - name: Healthy Alerts Fiberinterconnect 
+      cisco.intersight.intersight_rest_api:
+        <<: *api_info
+        resource_path: /network/ElementSummaries
+        query_params:
+          $filter: "((AlarmSummary.Critical eq 0) and (AlarmSummary.Warning eq 0))"
+          $count: true
+      register: FabricInterconnect_health
+      
+    - name: Healthy Alerts Fiberinterconnect
+      cisco.intersight.intersight_rest_api:
+        <<: *api_info
+        resource_path: /network/ElementSummaries
+        query_params:
+          $filter: "(AlarmSummary.Critical gt 0)"
+          $count: true
+      register: FabricInterconnect_critical
+      # - name: Get value for test
+      #debug:
+      # var=hostvars[inventory_hostname]['FabricInterconnect_critical']['api_response']
+    - name: Warning Alerts
+      cisco.intersight.intersight_rest_api:
+        <<: *api_info
+        resource_path: /network/ElementSummaries
+        query_params:
+          $filter: "((AlarmSummary.Critical eq 0) and (AlarmSummary.Warning gt 0))"
+          $count: true
+      register: FabricInterconnec_warning
+    - name: use template to bulid email
+      template:
+        src: email_body.j2
+        dest: ./logs/email.html
+      run_once: yes 
+    - name: Send message to Teams
+      uri:
+        url: "https://kyndryl.webhook.office.com/webhookb2/1a4dcd11-b7e5-4a99-b3fa-06f68f78db93@f260df36-bc43-424c-8f44-c85226657b01/IncomingWebhook/5da9ef72ecc449d09019ac565d3846f2/088d23be-5da5-4ae2-9a29-361795d4ed5f"
+        #body: '{"@type":"MessageCard","@context": "http://schema.org/extensions","themeColor":"0076D7","summary":"AN",title:"Monitoring Email",text:""}'
+        #body: "{{ lookup('file', './email_body.j2') }}"
+        #url: "https://kyndryl.webhook.office.com/webhookb2/1a4dcd11-b7e5-4a99-b3fa-06f68f78db93@f260df36-bc43-424c-8f44-c85226657b01/IncomingWebhook/5da9ef72ecc449d09019ac565d3846f2/088d23be-5da5-4ae2-9a29-361795d4ed5if" 
+        body_format: json
+        body:      
+            activityImage: "http://connectorsdemo.azurewebsites.net/images/MSC12_Oscar_002.jpg"
+            title: CLS monitoring
+            text: "{{ lookup('template', './email_body_teams.j2') }}"
+            themeColor: "23c42e"
+        method: POST
+        return_content: yes
+
+    - name: send email
+      mail:    
+        host: smtp.gmail.com
+        port: 587
+        username: "lachhabhaifa@gmail.com"
+        password: "{{pwd_smtp}}"
+        to: "lachhabhaifa@gmail.com"
+        subject: "CLS - UCS Fault Monitoring - {{ lookup('pipe','date +%d-%b-%Y') }}"
+        body: "{{ lookup('template', 'email_body.j2') }}"
+        subtype: html
+        charset: utf8
+      run_once: yes  
+      delegate_to: localhost
+       
+     
+ 
+
+
